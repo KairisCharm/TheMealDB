@@ -1,0 +1,7 @@
+<resources>
+    <string name="appName">TheMealDB</string>
+
+    <string name="brownie_ingredient_1">¾ c butter</string>
+    <string name="delicious_sweets_straight_from_nanas_house">Delicious sweets straight from Nana\'s house!</string>
+    <string name="dessert">Dessert</string>
+</resources>

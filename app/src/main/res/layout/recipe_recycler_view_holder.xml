@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="recipeMetadata" type="com.kairischarm.mealdb.recipe.RecipeMetadata"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/recipeLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/generalPaddingAndMargin"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/recipeThumbnail"
+                android:layout_width="@dimen/standardThumbnailSize"
+                android:layout_height="@dimen/standardThumbnailSize"
+                android:layout_margin="@dimen/generalPaddingAndMargin"
+                android:contentDescription="@null"
+                tools:src="@drawable/chocolate_small"/>
+
+            <TextView
+                android:id="@+id/recipeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{recipeMetadata.name}"
+                style="@style/TitleTextView"
+                tools:text="Brownies"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/list_divider"/>
+
+    </LinearLayout>
+
+</layout>

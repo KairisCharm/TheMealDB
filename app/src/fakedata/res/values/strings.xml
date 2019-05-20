@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brownies">Brownies</string>
+    <string name="brownie_instructions">"Soften butter
+Add sugar and cocoa
+Stir these up. It will be pretty dry, but this will help get the lumps out of the cocoa.
+Add eggs, one at a time stirring after each.
+Add vanilla — you might stub your toe a little.
+Add salt and flour and stir in well.
+
+Pour into greased square pan. Bake at 350 for 30 minutes.</string>
+    <string name="brownie_ingredient_1">¾ c butter</string>
+    <string name="brownie_ingredient_2">1 c sugar</string>
+    <string name="brownie_ingredient_3">¼ c cocoa (maybe add 2 extra tbsp for a richer chocolaty flavor)</string>
+    <string name="brownie_ingredient_4">2 eggs</string>
+    <string name="brownie_ingredient_5">1 tsp vanilla extract</string>
+    <string name="brownie_ingredient_6">½ tsp salt</string>
+    <string name="brownie_ingredient_7">¾ c flour</string>
+
+</resources>

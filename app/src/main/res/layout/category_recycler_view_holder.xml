@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="category" type="com.kairischarm.mealdb.recipe.categories.Category"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/categoryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/generalPaddingAndMargin">
+
+            <ImageView
+                android:id="@+id/categoryThumbnail"
+                android:layout_width="@dimen/standardThumbnailSize"
+                android:layout_height="@dimen/standardThumbnailSize"
+                android:layout_margin="@dimen/generalPaddingAndMargin"
+                android:contentDescription="@null"
+                tools:src="@drawable/chocolate_small"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/categoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{category.name}"
+                    style="@style/TitleTextView"
+                    tools:text="@string/dessert"/>
+
+                <TextView
+                    android:id="@+id/categoryDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{category.description}"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/smallTextSize"
+                    android:textColor="@color/secondaryTextColor"
+                    tools:text="@string/delicious_sweets_straight_from_nanas_house"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/list_divider"/>
+
+    </LinearLayout>
+</layout>
